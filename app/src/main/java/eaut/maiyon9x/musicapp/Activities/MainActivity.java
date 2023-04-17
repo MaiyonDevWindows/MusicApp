@@ -1,10 +1,10 @@
-package eaut.maiyon9x.musicapp;
-
-import android.support.v7.app.AppCompatActivity;
+package eaut.maiyon9x.musicapp.Activities;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import eaut.maiyon9x.musicapp.R;
 
+public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
