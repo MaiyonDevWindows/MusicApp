@@ -9,6 +9,9 @@
         <item name="colorSecondary">@color/secondary_color</item>
         <item name="colorSecondaryVariant">@color/purple_700</item>
         <item name="colorOnSecondary">@color/teal_200</item>
+
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primary_color</item>
+        <item name="android:windowBackground">@drawable/lgradient_dbackground</item>
     </style>
     <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->

@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:fontFamily="@font/choco_cooky"
-        android:text="@string/sign_up"
+        android:text="@string/sign_in"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="40sp"
@@ -49,25 +49,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextEmail"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/edittext_background"
-        android:ems="10"
-        android:fontFamily="@font/choco_cooky"
-        android:inputType="textEmailAddress"
-        android:hint="@string/email"
-        android:textColor="@color/black"
-        android:padding="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextUName"/>
-
-    <EditText
         android:id="@+id/editTextPwd"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -84,26 +65,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"/>
+        app:layout_constraintTop_toBottomOf="@+id/editTextUName" />
 
-    <EditText
-        android:id="@+id/editTextRePwd"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/textViewForgotPwd"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/edittext_background"
-        android:ems="10"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/choco_cooky"
-        android:inputType="textPassword"
-        android:hint="@string/re_password"
-        android:textColor="@color/black"
-        android:padding="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPwd"/>
+        android:text="@string/forgot_password"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextPwd"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPwd" />
+
+    <TextView
+        android:id="@+id/textViewResetPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/choco_cooky"
+        android:text="@string/reset_password"
+        android:textColor="@color/highlight_color"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewForgotPwd"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPwd" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -120,7 +108,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
             android:fontFamily="@font/choco_cooky"
-            android:text="@string/already_have_an_account"
+            android:text="@string/do_not_have_an_account"
             android:textColor="@color/white"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -130,7 +118,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/choco_cooky"
-            android:text="@string/sign_in"
+            android:text="@string/sign_up"
             android:textColor="@color/highlight_color"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
