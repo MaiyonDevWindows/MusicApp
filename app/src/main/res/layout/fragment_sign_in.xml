@@ -21,10 +21,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:fontFamily="@font/choco_cooky"
-        android:text="@string/sign_in"
+        android:text="@string/login"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
@@ -72,12 +73,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/choco_cooky"
         android:text="@string/forgot_password"
         android:textColor="@color/white"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/editTextPwd"
         app:layout_constraintTop_toBottomOf="@+id/editTextPwd" />
 
@@ -86,14 +87,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
         android:fontFamily="@font/choco_cooky"
-        android:text="@string/reset_password"
+        android:text="@string/reset"
         android:textColor="@color/highlight_color"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textViewForgotPwd"
         app:layout_constraintTop_toBottomOf="@+id/editTextPwd" />
 
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/ButtonGradient"
+        android:background="@drawable/gradient_background"
+        android:fontFamily="@font/choco_cooky"
+        android:text="@string/login"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/RegisterBox"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPwd"
+        app:layout_constraintStart_toStartOf="@+id/editTextPwd"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPwd" />
+
     <LinearLayout
+        android:id="@+id/RegisterBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
@@ -111,6 +131,7 @@
             android:text="@string/do_not_have_an_account"
             android:textColor="@color/white"
             android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
         <TextView
@@ -118,7 +139,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/choco_cooky"
-            android:text="@string/sign_up"
+            android:text="@string/register"
             android:textColor="@color/highlight_color"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"

@@ -15,4 +15,6 @@
     <color name="text">#33333333</color>
 
     <color name="edittext_color">#C4C4C4</color>
+    <color name="btgrad_start">#ED8770</color>
+    <color name="btgrad_end">#D9519D</color>
 </resources>

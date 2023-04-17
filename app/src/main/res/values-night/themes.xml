@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.MusicApp" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.MusicApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/secondary_color</item>
         <item name="colorPrimaryDark">@color/purple_700</item>
@@ -13,7 +13,7 @@
         <item name="android:statusBarColor" tools:targetApi="l">@color/secondary_color</item>
         <item name="android:windowBackground">@drawable/lgradient_nbackground</item>
     </style>
-    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="SplashTheme" parent="Theme.MaterialComponents.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/secondary_color</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -25,5 +25,10 @@
 
         <item name="android:statusBarColor" tools:targetApi="l">@color/secondary_color</item>
         <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="ButtonGradient" parent="TextAppearance.AppCompat.Button">
+        <item name="colorPrimary">@null</item>
+        <item name="colorPrimaryVariant">@null</item>
     </style>
 </resources>
