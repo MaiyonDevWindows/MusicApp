@@ -77,12 +77,12 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/tv_goBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/choco_cooky"
             android:text="@string/go_back"
-            android:textColor="@color/highlight_color"
+            android:textColor="@color/primary_color"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -93,7 +93,6 @@
         android:id="@+id/btnSubmit"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:theme="@style/ButtonGradient"
         android:background="@drawable/gradient_background"
         android:fontFamily="@font/choco_cooky"
         android:text="@string/reset_password"

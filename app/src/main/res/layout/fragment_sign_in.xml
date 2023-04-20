@@ -84,14 +84,14 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextPwd" />
 
     <TextView
-        android:id="@+id/textViewResetPwd"
+        android:id="@+id/tv_resetPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
         android:fontFamily="@font/choco_cooky"
         android:text="@string/reset"
-        android:textColor="@color/highlight_color"
+        android:textColor="@color/primary_color"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textViewForgotPwd"
@@ -101,13 +101,12 @@
         android:id="@+id/btnSubmit"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:theme="@style/ButtonGradient"
-        android:background="@drawable/gradient_background"
         android:fontFamily="@font/choco_cooky"
         android:text="@string/login"
         android:textSize="18sp"
         android:textColor="@color/white"
         android:textStyle="bold"
+        android:background="@drawable/gradient_background"
         app:layout_constraintBottom_toTopOf="@+id/RegisterBox"
         app:layout_constraintEnd_toEndOf="@+id/editTextPwd"
         app:layout_constraintStart_toStartOf="@+id/editTextPwd"
@@ -136,12 +135,12 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/tv_dontHaveAnAccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/choco_cooky"
             android:text="@string/register"
-            android:textColor="@color/highlight_color"
+            android:textColor="@color/primary_color"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
