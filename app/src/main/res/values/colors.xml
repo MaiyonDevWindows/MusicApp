@@ -13,8 +13,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="text">#33333333</color>
+    <color name="transWhite">#80FFFFFF</color>
 
     <color name="edittext_color">#C4C4C4</color>
-    <color name="btgrad_start">#ED8770</color>
-    <color name="btgrad_end">#D9519D</color>
+    <color name="btgrad_start">#D9519D</color>
+    <color name="btgrad_end">#ED8770</color>
+    <color name="trans_btgrad_start">#80D9519D</color>
+    <color name="trans_btgrad_end">#80ED8770</color>
 </resources>

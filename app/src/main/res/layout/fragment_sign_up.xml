@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.SignInFragment">
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="0dp"
@@ -15,6 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
@@ -32,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
-        android:id="@+id/editTextUName"
+        android:id="@+id/txtUserName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -41,16 +42,16 @@
         android:background="@drawable/edittext_background"
         android:ems="10"
         android:fontFamily="@font/choco_cooky"
-        android:inputType="text"
         android:hint="@string/user_name"
-        android:textColor="@color/black"
+        android:inputType="text"
         android:padding="15dp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/txtUserEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -59,17 +60,17 @@
         android:background="@drawable/edittext_background"
         android:ems="10"
         android:fontFamily="@font/choco_cooky"
-        android:inputType="textEmailAddress"
         android:hint="@string/email"
-        android:textColor="@color/black"
+        android:inputType="textEmailAddress"
         android:padding="15dp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextUName"/>
+        app:layout_constraintTop_toBottomOf="@+id/txtUserName" />
 
     <EditText
-        android:id="@+id/editTextPwd"
+        android:id="@+id/txtPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -78,17 +79,17 @@
         android:background="@drawable/edittext_background"
         android:ems="10"
         android:fontFamily="@font/choco_cooky"
-        android:inputType="textPassword"
         android:hint="@string/password"
-        android:textColor="@color/black"
+        android:inputType="textPassword"
         android:padding="15dp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"/>
+        app:layout_constraintTop_toBottomOf="@+id/txtUserEmail" />
 
     <EditText
-        android:id="@+id/editTextRePwd"
+        android:id="@+id/txtRePassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -97,31 +98,42 @@
         android:background="@drawable/edittext_background"
         android:ems="10"
         android:fontFamily="@font/choco_cooky"
-        android:inputType="textPassword"
         android:hint="@string/re_password"
-        android:textColor="@color/black"
+        android:inputType="textPassword"
         android:padding="15dp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPwd"/>
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
 
-    <Button
-        android:id="@+id/btnSubmit"
-        android:layout_width="0dp"
+    <ProgressBar
+        android:id="@+id/progressRegister"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/gradient_background"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/btgrad_start"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+        app:layout_constraintEnd_toEndOf="@+id/txtRePassword"
+        app:layout_constraintStart_toStartOf="@+id/txtRePassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtRePassword" />
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/grandient_button_background"
+        android:enabled="false"
         android:fontFamily="@font/choco_cooky"
         android:text="@string/register"
+        android:textColor="@color/transWhite"
         android:textSize="18sp"
-        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintEnd_toEndOf="@+id/editTextRePwd"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextRePwd"
-        app:layout_constraintTop_toBottomOf="@+id/editTextRePwd" />
-
+        app:layout_constraintEnd_toEndOf="@+id/txtRePassword"
+        app:layout_constraintStart_toStartOf="@+id/txtRePassword" />
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"

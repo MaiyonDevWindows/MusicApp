@@ -12,8 +12,8 @@
         </shape>
     </item>
     <item android:gravity="center"
-            android:height="200px"
-            android:width="200px">
+            android:height="75dp"
+            android:width="75dp">
         <inset android:drawable="@drawable/muzic_logo"></inset>
     </item>
 </layer-list>

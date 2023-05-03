@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "961993055249",
+    "project_id": "muzicapp-52a7a",
+    "storage_bucket": "muzicapp-52a7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961993055249:android:16ae0f41f5da2b9cec65b0",
+        "android_client_info": {
+          "package_name": "eaut.maiyon9x.musicapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961993055249-pk4atplmhghdalnh3s8v587rh3cvlm0p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxAUmMFERsZSAwGPbYKbeCs9-7RQox6L4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "961993055249-pk4atplmhghdalnh3s8v587rh3cvlm0p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
-        android:id="@+id/editTextUName"
+        android:id="@+id/txtUserName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -51,7 +51,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextPwd"
+        android:id="@+id/txtPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -67,7 +67,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextUName" />
+        app:layout_constraintTop_toBottomOf="@+id/txtUserName" />
 
     <TextView
         android:id="@+id/textViewForgotPwd"
@@ -80,8 +80,8 @@
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/editTextPwd"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPwd" />
+        app:layout_constraintStart_toStartOf="@+id/txtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
 
     <TextView
         android:id="@+id/tv_resetPassword"
@@ -95,10 +95,10 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textViewForgotPwd"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPwd" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
 
     <Button
-        android:id="@+id/btnSubmit"
+        android:id="@+id/btnRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/choco_cooky"
@@ -108,9 +108,9 @@
         android:textStyle="bold"
         android:background="@drawable/gradient_background"
         app:layout_constraintBottom_toTopOf="@+id/RegisterBox"
-        app:layout_constraintEnd_toEndOf="@+id/editTextPwd"
-        app:layout_constraintStart_toStartOf="@+id/editTextPwd"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPwd" />
+        app:layout_constraintEnd_toEndOf="@+id/txtPassword"
+        app:layout_constraintStart_toStartOf="@+id/txtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
 
     <LinearLayout
         android:id="@+id/RegisterBox"

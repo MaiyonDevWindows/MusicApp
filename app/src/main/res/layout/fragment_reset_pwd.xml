@@ -48,7 +48,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"/>
     <EditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/txtUserEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -90,7 +90,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnSubmit"
+        android:id="@+id/btnRegister"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/gradient_background"
@@ -100,7 +100,7 @@
         android:textStyle="bold"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
-        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+        app:layout_constraintEnd_toEndOf="@+id/txtUserEmail"
+        app:layout_constraintStart_toStartOf="@+id/txtUserEmail"
+        app:layout_constraintTop_toBottomOf="@+id/txtUserEmail" />
 </androidx.constraintlayout.widget.ConstraintLayout>
