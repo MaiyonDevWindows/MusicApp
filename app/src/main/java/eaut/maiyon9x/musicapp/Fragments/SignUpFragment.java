@@ -46,12 +46,11 @@ public class SignUpFragment extends Fragment {
         TVAlreadyHaveAccount = view.findViewById(R.id.tv_alreadyHaveAnAccount);
         frameLayout = getActivity().findViewById(R.id.register_frame);
 
-        // Ánh xạ Views
-        userName = view.findViewById(R.id.txtUserName);
-        userEmail = view.findViewById(R.id.txtUserEmail);
-        password = view.findViewById(R.id.txtPassword);
-        rePassword = view.findViewById(R.id.txtRePassword);
-        progressRegister = view.findViewById(R.id.progressRegister);
+        userName = view.findViewById(R.id.txtRegisterUserName);
+        userEmail = view.findViewById(R.id.txtRegisterEmail);
+        password = view.findViewById(R.id.txtRegisterPwd);
+        rePassword = view.findViewById(R.id.txtRegisterRePwd);
+        progressRegister = view.findViewById(R.id.progressLogin);
         btnRegister = view.findViewById(R.id.btnRegister);
         mFirebaseAuth = FirebaseAuth.getInstance();
         return view;

@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
-        android:id="@+id/txtUserName"
+        android:id="@+id/txtRegisterUserName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -51,7 +51,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/txtUserEmail"
+        android:id="@+id/txtRegisterEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -65,12 +65,12 @@
         android:padding="15dp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtUserName" />
+        app:layout_constraintTop_toBottomOf="@+id/txtRegisterUserName" />
 
     <EditText
-        android:id="@+id/txtPassword"
+        android:id="@+id/txtRegisterPwd"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -86,10 +86,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtUserEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/txtRegisterEmail" />
 
     <EditText
-        android:id="@+id/txtRePassword"
+        android:id="@+id/txtRegisterRePwd"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -105,10 +105,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/txtRegisterPwd" />
 
     <ProgressBar
-        android:id="@+id/progressRegister"
+        android:id="@+id/progressLogin"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
@@ -116,9 +116,9 @@
         android:indeterminateTint="@color/btgrad_start"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/btnRegister"
-        app:layout_constraintEnd_toEndOf="@+id/txtRePassword"
-        app:layout_constraintStart_toStartOf="@+id/txtRePassword"
-        app:layout_constraintTop_toBottomOf="@+id/txtRePassword" />
+        app:layout_constraintEnd_toEndOf="@+id/txtRegisterRePwd"
+        app:layout_constraintStart_toStartOf="@+id/txtRegisterRePwd"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegisterRePwd" />
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="347dp"
@@ -132,8 +132,8 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintEnd_toEndOf="@+id/txtRePassword"
-        app:layout_constraintStart_toStartOf="@+id/txtRePassword" />
+        app:layout_constraintEnd_toEndOf="@+id/txtRegisterRePwd"
+        app:layout_constraintStart_toStartOf="@+id/txtRegisterRePwd" />
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
