@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Theme.MusicApp" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
@@ -10,7 +10,7 @@
         <item name="colorSecondaryVariant">@color/purple_700</item>
         <item name="colorOnSecondary">@color/teal_200</item>
 
-        <item name="android:statusBarColor" tools:targetApi="l">@color/secondary_color</item>
+        <item name="android:statusBarColor" >@color/secondary_color</item>
         <item name="android:windowBackground">@drawable/lgradient_nbackground</item>
     </style>
     <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -23,7 +23,7 @@
         <item name="colorSecondaryVariant">@color/purple_700</item>
         <item name="colorOnSecondary">@color/teal_200</item>
 
-        <item name="android:statusBarColor" tools:targetApi="l">@color/secondary_color</item>
-        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:statusBarColor" >@color/secondary_color</item>
+        <item name="android:windowBackground">@drawable/muzic_logo</item>
     </style>
 </resources>

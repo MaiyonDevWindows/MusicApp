@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.SignInFragment">
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="0dp"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageLogo"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:src="@mipmap/muzic_png_logo_foreground"
+        app:cardBackgroundColor="@color/transparent"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_logo"
+            android:src="@mipmap/muzic_png_logo_foreground" />
+    </androidx.cardview.widget.CardView>
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -27,11 +34,10 @@
         android:textColor="@color/white"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
+        app:layout_constraintTop_toBottomOf="@+id/imageLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
     <EditText
         android:id="@+id/txtRegisterUserName"
         android:layout_width="0dp"
@@ -43,12 +49,13 @@
         android:ems="10"
         android:fontFamily="@font/choco_cooky"
         android:hint="@string/user_name"
+        android:autofillHints="User Name"
         android:inputType="text"
         android:padding="15dp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
 
     <EditText
         android:id="@+id/txtRegisterEmail"
@@ -61,6 +68,7 @@
         android:ems="10"
         android:fontFamily="@font/choco_cooky"
         android:hint="@string/email"
+        android:autofillHints="Email Address"
         android:inputType="textEmailAddress"
         android:padding="15dp"
         android:textColor="@color/black"
@@ -80,6 +88,7 @@
         android:ems="10"
         android:fontFamily="@font/choco_cooky"
         android:hint="@string/password"
+        android:autofillHints="Password"
         android:inputType="textPassword"
         android:padding="15dp"
         android:textColor="@color/black"
@@ -99,6 +108,7 @@
         android:ems="10"
         android:fontFamily="@font/choco_cooky"
         android:hint="@string/re_password"
+        android:autofillHints="Retype Password"
         android:inputType="textPassword"
         android:padding="15dp"
         android:textColor="@color/black"
@@ -108,12 +118,12 @@
         app:layout_constraintTop_toBottomOf="@+id/txtRegisterPwd" />
 
     <ProgressBar
-        android:id="@+id/progressLogin"
+        android:id="@+id/progressRsPwd"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:indeterminate="true"
-        android:indeterminateTint="@color/btgrad_start"
+        android:indeterminateTint="@color/btgrad_end"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/btnRegister"
         app:layout_constraintEnd_toEndOf="@+id/txtRegisterRePwd"
@@ -124,7 +134,7 @@
         android:layout_width="347dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/grandient_button_background"
+        android:background="@drawable/gradient_button_background"
         android:enabled="false"
         android:fontFamily="@font/choco_cooky"
         android:text="@string/register"
@@ -143,7 +153,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
-
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
@@ -156,7 +165,6 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
-
         <TextView
             android:id="@+id/tv_alreadyHaveAnAccount"
             android:layout_width="wrap_content"

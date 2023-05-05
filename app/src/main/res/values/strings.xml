@@ -1,4 +1,5 @@
 <resources>
+    <string name="app_logo">MuzicLogo</string>
     <string name="app_name">MuzicApp</string>
     <!--  Register/Login Strings  -->
     <string name="register">Register</string>
@@ -15,5 +16,7 @@
     <string name="reset_password_text">
         Don\'t worry, we just need only your registered email address to reset your password
     </string>
+    <string name="rs_pwd_success">Check your email!</string>
+    <string name="rs_pwd_failure">There is an issue sending email!</string>
     <string name="go_back">Go back</string>
 </resources>
