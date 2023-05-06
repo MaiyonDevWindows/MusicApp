@@ -11,6 +11,7 @@
     <color name="highlight_color">#E33333</color>
 
     <color name="black">#FF000000</color>
+    <color name="transBlack">#80CCCCCC</color>
     <color name="white">#FFFFFFFF</color>
     <color name="text">#33333333</color>
     <color name="transWhite">#80FFFFFF</color>

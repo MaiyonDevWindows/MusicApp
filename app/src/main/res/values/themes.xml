@@ -24,6 +24,6 @@
         <item name="colorOnSecondary">@color/teal_200</item>
 
         <item name="android:statusBarColor">@color/primary_color</item>
-        <item name="android:windowBackground">@drawable/muzic_logo</item>
+        <item name="android:windowBackground">@drawable/muzic_logo</item>s
     </style>
 </resources>
